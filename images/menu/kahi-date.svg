@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#0a1628"/>
+  <ellipse cx="200" cy="180" rx="130" ry="70" fill="#0f1e36" stroke="#4da8e8" stroke-width="1"/>
+  <!-- Kahi layers -->
+  <path d="M125 170 Q162 142 200 145 Q238 142 275 170" stroke="#7ec8f8" stroke-width="2.5" fill="none"/>
+  <path d="M135 162 Q168 138 200 140 Q232 138 265 162" stroke="#4da8e8" stroke-width="2" fill="none"/>
+  <path d="M145 155 Q172 134 200 136 Q228 134 255 155" stroke="#60b5f0" stroke-width="1.8" fill="none"/>
+  <!-- Date syrup pool -->
+  <ellipse cx="200" cy="195" rx="60" ry="20" fill="#1a2e4a" opacity="0.8"/>
+  <ellipse cx="200" cy="192" rx="45" ry="14" fill="#6b3510" opacity="0.7"/>
+  <!-- Syrup drizzling from top -->
+  <path d="M190 145 Q195 165 192 185" stroke="#1a2e4a" stroke-width="3" opacity="0.7" stroke-linecap="round"/>
+  <path d="M210 148 Q212 168 215 188" stroke="#1a2e4a" stroke-width="2.5" opacity="0.6" stroke-linecap="round"/>
+  <!-- Butter pat -->
+  <rect x="175" y="140" width="20" height="8" rx="3" fill="#f5e8a0" opacity="0.8"/>
+  <!-- Date syrup jar to the side -->
+  <rect x="305" y="140" width="30" height="50" rx="5" fill="#142540" stroke="#4da8e8" stroke-width="1"/>
+  <rect x="308" y="135" width="24" height="8" rx="3" fill="#4da8e8"/>
+  <rect x="310" y="155" width="20" height="25" rx="2" fill="#1a2e4a" opacity="0.7"/>
+</svg>

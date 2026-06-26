@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#0a1628"/>
+  <!-- Saucer -->
+  <ellipse cx="200" cy="235" rx="75" ry="28" fill="#0f1e36" stroke="#4da8e8" stroke-width="1"/>
+  <!-- Dallah (Arabic coffee pot) -->
+  <path d="M180 120 Q175 160 178 200 Q185 230 200 232 Q215 230 222 200 Q225 160 220 120" fill="#4da8e8" stroke="#2d7ab8" stroke-width="1.5"/>
+  <!-- Pot spout -->
+  <path d="M220 140 Q240 130 255 125 Q260 122 258 118" stroke="#4da8e8" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Pot handle -->
+  <path d="M180 130 Q160 140 155 160 Q152 180 158 195" stroke="#2d7ab8" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Pot lid -->
+  <ellipse cx="200" cy="120" rx="22" ry="8" fill="#2d7ab8"/>
+  <circle cx="200" cy="110" r="5" fill="#4da8e8"/>
+  <!-- Decorative band -->
+  <rect x="179" y="165" width="42" height="3" fill="#2d7ab8" rx="1"/>
+  <rect x="179" y="185" width="42" height="3" fill="#2d7ab8" rx="1"/>
+  <!-- Small finjan cup -->
+  <path d="M290 190 L295 225 Q300 230 305 225 L310 190" fill="#142540" stroke="#4da8e8" stroke-width="1"/>
+  <ellipse cx="300" cy="190" rx="10" ry="4" fill="none" stroke="#4da8e8" stroke-width="1"/>
+  <!-- Coffee in cup -->
+  <ellipse cx="300" cy="195" rx="8" ry="3" fill="#3d1a00"/>
+  <!-- Saffron threads -->
+  <line x1="130" y1="220" x2="135" y2="210" stroke="#7ec8f8" stroke-width="1.5" opacity="0.6"/>
+  <line x1="135" y1="222" x2="140" y2="212" stroke="#4da8e8" stroke-width="1.5" opacity="0.5"/>
+  <line x1="140" y1="224" x2="144" y2="215" stroke="#60b5f0" stroke-width="1.5" opacity="0.5"/>
+</svg>

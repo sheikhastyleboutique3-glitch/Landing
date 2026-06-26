@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#0a1628"/>
+  <!-- Large ornate tray -->
+  <ellipse cx="200" cy="180" rx="170" ry="95" fill="#1f1a12" stroke="#4da8e8" stroke-width="2"/>
+  <ellipse cx="200" cy="180" rx="160" ry="88" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.4"/>
+  <!-- Multiple dishes arranged -->
+  <!-- Center: Kahi stack -->
+  <ellipse cx="200" cy="165" rx="40" ry="22" fill="#142540"/>
+  <path d="M170 160 Q185 145 200 148 Q215 145 230 160" stroke="#7ec8f8" stroke-width="2" fill="none"/>
+  <path d="M175 155 Q188 142 200 144 Q212 142 225 155" stroke="#4da8e8" stroke-width="1.5" fill="none"/>
+  <ellipse cx="200" cy="143" rx="20" ry="10" fill="#f5f0e0" opacity="0.8"/>
+  <!-- Left: Fruits -->
+  <ellipse cx="120" cy="170" rx="35" ry="20" fill="#0f1e36"/>
+  <circle cx="110" cy="165" r="8" fill="#8b1a1a" opacity="0.8"/>
+  <circle cx="125" cy="162" r="7" fill="#c94d4d" opacity="0.7"/>
+  <circle cx="130" cy="172" r="6" fill="#4a8b2a" opacity="0.7"/>
+  <!-- Right: Baklava -->
+  <ellipse cx="280" cy="170" rx="35" ry="20" fill="#0f1e36"/>
+  <polygon points="265,165 275,158 285,165 275,172" fill="#60b5f0" stroke="#4da8e8" stroke-width="0.5"/>
+  <polygon points="275,165 285,158 295,165 285,172" fill="#2d7ab8" stroke="#4da8e8" stroke-width="0.5"/>
+  <!-- Bottom: Tea set -->
+  <rect x="180" y="210" width="12" height="20" rx="2" fill="#142540" stroke="#4da8e8" stroke-width="1"/>
+  <rect x="208" y="210" width="12" height="20" rx="2" fill="#142540" stroke="#4da8e8" stroke-width="1"/>
+  <!-- Crown/special indicator -->
+  <path d="M185 80 L192 95 L200 82 L208 95 L215 80" stroke="#4da8e8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M185 80 Q200 72 215 80" stroke="#4da8e8" stroke-width="1" fill="none"/>
+  <!-- Sparkles -->
+  <circle cx="150" cy="100" r="2" fill="#4da8e8" opacity="0.6"/>
+  <circle cx="250" cy="95" r="1.5" fill="#7ec8f8" opacity="0.5"/>
+  <circle cx="300" cy="120" r="1.5" fill="#4da8e8" opacity="0.4"/>
+</svg>
