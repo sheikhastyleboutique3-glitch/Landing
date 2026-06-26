@@ -85,15 +85,15 @@
       grid.innerHTML = items.map(item => `
         <div class="menu-card" data-id="${item.id}">
           <div class="menu-card-visual">
-            <img src="${IMG_PREFIX}${item.image}" alt="${item.name}" class="responsive-img" loading="lazy">
-            ${item.featured ? '<span class="menu-card-badge">Popular</span>' : ''}
+            <img src="${IMG_PREFIX}${item.image}" alt="${item.nameAr || item.name}" class="responsive-img" loading="lazy">
+            ${item.featured ? '<span class="menu-card-badge">مميز</span>' : ''}
           </div>
           <div class="menu-card-info">
-            <h3 class="menu-card-title">${item.name}</h3>
-            <p class="menu-card-desc">${item.description}</p>
+            <h3 class="menu-card-title">${item.nameAr || item.name}</h3>
+            <p class="menu-card-desc">${item.descriptionAr || item.description}</p>
             <div class="menu-card-footer">
-              <span class="menu-price">QAR ${item.price}</span>
-              <button class="menu-add-btn" title="Add to order">+</button>
+              <span class="menu-price">${item.price} ر.ق</span>
+              <button class="menu-add-btn" title="أضف للطلب">+</button>
             </div>
           </div>
         </div>
@@ -120,8 +120,8 @@
       if (!grid) return;
       grid.innerHTML = items.map((item, i) => `
         <div class="gallery-item ${i===0||i===4 ? 'large' : ''}">
-          <img src="${IMG_PREFIX}${item.image}" alt="${item.title}" class="responsive-img" loading="lazy">
-          <span class="gallery-label">${item.title}</span>
+          <img src="${IMG_PREFIX}${item.image}" alt="${item.titleAr || item.title}" class="responsive-img" loading="lazy">
+          <span class="gallery-label">${item.titleAr || item.title}</span>
         </div>
       `).join('');
     } catch(err) { console.error('Gallery load error:', err); }
@@ -137,10 +137,10 @@
       slider.innerHTML = items.map(t => `
         <div class="testimonial-card">
           <div class="testimonial-rating">${'<span class="star">★</span>'.repeat(t.rating)}</div>
-          <p class="testimonial-text">"${t.text}"</p>
+          <p class="testimonial-text">"${t.textAr || t.text}"</p>
           <div class="testimonial-author">
-            <div class="testimonial-avatar" style="background:linear-gradient(135deg,var(--color-gold),var(--color-amber));width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.1rem;">${t.name.charAt(0)}</div>
-            <div><div class="testimonial-name">${t.name}</div><div class="testimonial-role">${t.date}</div></div>
+            <div class="testimonial-avatar" style="background:linear-gradient(135deg,var(--color-gold),var(--color-amber));width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.1rem;">${(t.nameAr || t.name).charAt(0)}</div>
+            <div><div class="testimonial-name">${t.nameAr || t.name}</div><div class="testimonial-role">${t.date}</div></div>
           </div>
         </div>
       `).join('');
