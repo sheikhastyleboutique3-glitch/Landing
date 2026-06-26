@@ -5,6 +5,9 @@
 (function() {
   'use strict';
   const API = '';
+  // Detect if running on GitHub Pages (no backend) - use static JSON files
+  const isStatic = window.location.hostname.includes('github.io') || window.location.protocol === 'file:';
+  const DATA_PATH = isStatic ? '/Landing/data' : '/api';
 
   // ========== LOADER ==========
   const loader = document.getElementById('loader');
@@ -68,17 +71,21 @@
     });
   });
 
+  // Fix image paths for GitHub Pages
+  const IMG_PREFIX = isStatic ? '/Landing' : '';
+
   // ========== LOAD MENU ==========
   async function loadMenu(category='breakfast') {
     try {
-      const res = await fetch(API+'/api/menu?category='+category);
-      const items = await res.json();
+      const res = await fetch(DATA_PATH + '/menu.json');
+      const allItems = await res.json();
+      const items = allItems.filter(i => i.category === category);
       const grid = document.getElementById('menu-grid');
       if (!grid) return;
       grid.innerHTML = items.map(item => `
         <div class="menu-card" data-id="${item.id}">
           <div class="menu-card-visual">
-            <img src="${item.image}" alt="${item.name}" class="responsive-img" loading="lazy">
+            <img src="${IMG_PREFIX}${item.image}" alt="${item.name}" class="responsive-img" loading="lazy">
             ${item.featured ? '<span class="menu-card-badge">Popular</span>' : ''}
           </div>
           <div class="menu-card-info">
@@ -91,7 +98,6 @@
           </div>
         </div>
       `).join('');
-      // Animate in
       gsap.from('.menu-card', { opacity:0, y:30, duration:0.6, stagger:0.1, ease:'power3.out' });
     } catch(err) { console.error('Menu load error:', err); }
   }
@@ -108,13 +114,13 @@
   // ========== LOAD GALLERY ==========
   async function loadGallery() {
     try {
-      const res = await fetch(API+'/api/gallery');
+      const res = await fetch(DATA_PATH + '/gallery.json');
       const items = await res.json();
       const grid = document.getElementById('gallery-grid');
       if (!grid) return;
       grid.innerHTML = items.map((item, i) => `
         <div class="gallery-item ${i===0||i===4 ? 'large' : ''}">
-          <img src="${item.image}" alt="${item.title}" class="responsive-img" loading="lazy">
+          <img src="${IMG_PREFIX}${item.image}" alt="${item.title}" class="responsive-img" loading="lazy">
           <span class="gallery-label">${item.title}</span>
         </div>
       `).join('');
@@ -124,7 +130,7 @@
   // ========== LOAD TESTIMONIALS ==========
   async function loadTestimonials() {
     try {
-      const res = await fetch(API+'/api/testimonials');
+      const res = await fetch(DATA_PATH + '/testimonials.json');
       const items = await res.json();
       const slider = document.getElementById('testimonials-slider');
       if (!slider) return;
@@ -148,7 +154,7 @@
       e.preventDefault();
       const data = Object.fromEntries(new FormData(contactForm));
       try {
-        await fetch(API+'/api/contact', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data) });
+        await fetch((isStatic ? '' : API) + '/api/contact', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data) });
         contactForm.style.display = 'none';
         document.getElementById('form-success').style.display = 'flex';
       } catch(err) { alert('Error sending message. Please try again.'); }
