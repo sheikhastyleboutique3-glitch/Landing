@@ -182,6 +182,79 @@
   // ========== LANGUAGE TOGGLE ==========
   const langBtn = document.getElementById('lang-toggle');
   let isArabic = true; // Site starts in Arabic
+
+  // Translation data
+  const translations = {
+    ar: {
+      'nav.home': 'الرئيسية', 'nav.story': 'قصتنا', 'nav.menu': 'القائمة',
+      'nav.gallery': 'المعرض', 'nav.reviews': 'آراء العملاء', 'nav.contact': 'تواصل معنا',
+      'nav.order': 'اطلب الآن',
+      'hero.badge': 'مطبخ عراقي أصيل • الدوحة، قطر',
+      'hero.line1': 'فن صناعة', 'hero.line2': 'القيمر والكاهي',
+      'hero.subtitle': 'عِش تجربة الأكل العراقي التقليدي بلمسة عصرية. طبقات ذهبية من الكاهي المقرمش متوّجة بالقيمر الحريري — وصفة عراقية عريقة، أتقنّاها في قلب الدوحة.',
+      'hero.cta1': 'استكشف القائمة', 'hero.cta2': 'اطلب توصيل',
+      'story.tag': 'تراثنا', 'story.title': 'إرث من <span class="highlight">النكهات</span>',
+      'story.lead': 'لأجيال عديدة، كانت رائحة الكاهي الطازج توقظ العائلات في أرجاء العراق. في قيمر وكاهي، نُحيي هذا التقليد العريق في قطر بنفس الحب والأصالة والشغف.',
+      'story.body': 'كاهينا مصنوع من طبقات رقيقة من عجين الفيلو المزبّد، يُخبز حتى يصبح ذهبياً ومقرمشاً، ثم يُرش بالعسل العطري ودبس التمر. مع قيمرنا المميز — كل قضمة رحلة عبر قرون من الفن الطهوي.',
+      'story.stat1': 'سنوات من التقاليد', 'story.stat2': 'عميل سعيد', 'story.stat3': 'فروع في الدوحة',
+      'menu.tag': 'قائمتنا', 'menu.title': 'أطباقنا <span class="highlight">المميزة</span>',
+      'menu.desc': 'كل طبق يحكي قصة تقليد، يُحضّر طازجاً يومياً بأجود المكونات',
+      'menu.cat1': 'فطور', 'menu.cat2': 'حلويات', 'menu.cat3': 'مشروبات', 'menu.cat4': 'عروض خاصة',
+      'gallery.tag': 'وليمة بصرية', 'gallery.title': '<span class="highlight">معرض</span> الصور',
+      'reviews.tag': 'ماذا يقولون', 'reviews.title': 'آراء <span class="highlight">عملائنا</span>',
+      'order.tag': 'توصيل سريع', 'order.title': 'نوصّل لـ<span class="highlight">بابك</span>',
+      'order.desc': 'كاهي وقيمر طازج يوصلك ساخن في كل أنحاء الدوحة. اطلب عبر خدمة التوصيل السريع.',
+      'order.f1': 'توصيل خلال 30 دقيقة', 'order.f2': 'طازج يومياً', 'order.f3': 'جودة مضمونة',
+      'order.cta1': 'اطلب الآن', 'order.cta2': 'اطلب واتساب',
+      'contact.tag': 'تواصل معنا', 'contact.title': 'زُرنا <span class="highlight">اليوم</span>',
+      'contact.info': 'معلومات التواصل', 'contact.form': 'أرسل رسالة',
+      'contact.hours': 'يومياً 6:00 صباحاً - 12:00 منتصف الليل',
+      'contact.send': 'إرسال',
+      'footer.desc': 'تجربة فطور عراقي أصيل في الدوحة، قطر. كاهي وقيمر تقليدي يُقدّم بحب منذ 2011.',
+      'footer.quick': 'روابط سريعة', 'footer.visit': 'زُرنا', 'footer.connect': 'تواصل',
+      'footer.open': 'مفتوح يومياً', 'footer.delivery': 'توصيل سريع متوفر',
+      'footer.orderOnline': 'اطلب اونلاين', 'footer.copy': '© 2026 قيمر وكاهي. جميع الحقوق محفوظة.'
+    },
+    en: {
+      'nav.home': 'Home', 'nav.story': 'Our Story', 'nav.menu': 'Menu',
+      'nav.gallery': 'Gallery', 'nav.reviews': 'Reviews', 'nav.contact': 'Contact',
+      'nav.order': 'Order Now',
+      'hero.badge': 'AUTHENTIC IRAQI CUISINE • DOHA, QATAR',
+      'hero.line1': 'The Art of', 'hero.line2': 'Gaimer & Kahi',
+      'hero.subtitle': 'Live the experience of Iraqi traditional food with a touch of fusion. Golden layers of flaky Kahi pastry crowned with velvety Gaimer cream — perfected in the heart of Doha.',
+      'hero.cta1': 'Explore Menu', 'hero.cta2': 'Order Delivery',
+      'story.tag': 'OUR HERITAGE', 'story.title': 'A Legacy of <span class="highlight">Flavor</span>',
+      'story.lead': 'For generations, the aroma of freshly baked Kahi has awakened families across Iraq. At Gaimer W Kahi, we bring this cherished tradition to Qatar with love and authenticity.',
+      'story.body': 'Our Kahi is crafted from layers of delicate phyllo dough, baked golden and crisp, drizzled with aromatic honey and date syrup. Paired with our signature Gaimer — every bite is a journey through centuries of culinary artistry.',
+      'story.stat1': 'Years of Tradition', 'story.stat2': 'Happy Customers', 'story.stat3': 'Locations in Doha',
+      'menu.tag': 'OUR MENU', 'menu.title': 'Signature <span class="highlight">Delights</span>',
+      'menu.desc': 'Every dish tells a story of tradition, crafted fresh daily with premium ingredients',
+      'menu.cat1': 'Breakfast', 'menu.cat2': 'Pastries', 'menu.cat3': 'Drinks', 'menu.cat4': 'Specials',
+      'gallery.tag': 'VISUAL FEAST', 'gallery.title': 'Our <span class="highlight">Gallery</span>',
+      'reviews.tag': 'WHAT THEY SAY', 'reviews.title': 'Customer <span class="highlight">Reviews</span>',
+      'order.tag': 'EXPRESS DELIVERY', 'order.title': 'Delivered to <span class="highlight">Your Door</span>',
+      'order.desc': 'Fresh Kahi & Gaimer delivered hot across Doha. Order via our express delivery service.',
+      'order.f1': '30 Min Delivery', 'order.f2': 'Made Fresh Daily', 'order.f3': 'Quality Guaranteed',
+      'order.cta1': 'Order Express', 'order.cta2': 'WhatsApp Order',
+      'contact.tag': 'GET IN TOUCH', 'contact.title': 'Visit <span class="highlight">Us</span>',
+      'contact.info': 'Contact Information', 'contact.form': 'Send a Message',
+      'contact.hours': '6:00 AM - 12:00 AM Daily',
+      'contact.send': 'Send Message',
+      'footer.desc': 'Authentic Iraqi Breakfast Experience in Doha, Qatar. Traditional Kahi & Gaimer served with love since 2011.',
+      'footer.quick': 'Quick Links', 'footer.visit': 'Visit Us', 'footer.connect': 'Connect',
+      'footer.open': 'Open Daily', 'footer.delivery': 'Express Delivery',
+      'footer.orderOnline': 'Order Online', 'footer.copy': '© 2026 Gaimer W Kahi. All rights reserved.'
+    }
+  };
+
+  function applyLanguage(lang) {
+    const t = translations[lang];
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (t[key]) el.innerHTML = t[key];
+    });
+  }
+
   if (langBtn) {
     langBtn.addEventListener('click', () => {
       isArabic = !isArabic;
@@ -189,7 +262,8 @@
       document.documentElement.lang = isArabic ? 'ar' : 'en';
       langBtn.querySelector('.lang-en').style.display = isArabic ? 'inline' : 'none';
       langBtn.querySelector('.lang-ar').style.display = isArabic ? 'none' : 'inline';
-      // Reload menu/gallery/testimonials in correct language
+      applyLanguage(isArabic ? 'ar' : 'en');
+      // Reload dynamic content
       const activeTab = document.querySelector('.menu-tab.active');
       if (activeTab) loadMenu(activeTab.dataset.category);
       loadGallery();
