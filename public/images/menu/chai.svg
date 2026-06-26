@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#0a1628"/>
+  <!-- Saucer -->
+  <ellipse cx="200" cy="230" rx="70" ry="25" fill="#0f1e36" stroke="#4da8e8" stroke-width="1"/>
+  <!-- Istikan glass shape -->
+  <path d="M175 140 L180 220 Q200 230 220 220 L225 140" fill="#142540" stroke="#4da8e8" stroke-width="1.5"/>
+  <!-- Tea liquid -->
+  <path d="M178 150 L182 215 Q200 222 218 215 L222 150" fill="#8b3a0a" opacity="0.8"/>
+  <!-- Glass reflection -->
+  <path d="M180 150 L182 200" stroke="white" stroke-width="1" opacity="0.15"/>
+  <!-- Gold rim at top -->
+  <ellipse cx="200" cy="140" rx="25" ry="8" fill="none" stroke="#4da8e8" stroke-width="2"/>
+  <!-- Gold band in middle -->
+  <rect x="177" y="175" width="46" height="3" fill="#4da8e8" opacity="0.4" rx="1"/>
+  <!-- Steam curls -->
+  <path d="M190 125 Q185 110 192 95 Q195 85 188 70" stroke="#f5f0e8" stroke-width="1.5" opacity="0.3" fill="none" stroke-linecap="round"/>
+  <path d="M200 122 Q197 105 203 90 Q206 78 200 65" stroke="#f5f0e8" stroke-width="1.5" opacity="0.25" fill="none" stroke-linecap="round"/>
+  <path d="M210 125 Q207 108 213 93 Q216 82 210 68" stroke="#f5f0e8" stroke-width="1.5" opacity="0.2" fill="none" stroke-linecap="round"/>
+  <!-- Cardamom pods beside -->
+  <ellipse cx="270" cy="220" rx="6" ry="10" fill="#5a7a3a" opacity="0.7" transform="rotate(-20 270 220)"/>
+  <ellipse cx="285" cy="225" rx="5" ry="9" fill="#4a6a2a" opacity="0.6" transform="rotate(10 285 225)"/>
+  <!-- Sugar cubes -->
+  <rect x="125" y="215" width="12" height="12" rx="1" fill="#f5f0e8" opacity="0.7"/>
+  <rect x="140" y="218" width="10" height="10" rx="1" fill="#f5f0e8" opacity="0.5"/>
+</svg>

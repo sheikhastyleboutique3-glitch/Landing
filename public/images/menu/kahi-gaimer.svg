@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#0a1628"/>
+  <ellipse cx="200" cy="180" rx="140" ry="80" fill="#0f1e36" stroke="#4da8e8" stroke-width="1.5"/>
+  <ellipse cx="200" cy="170" rx="120" ry="60" fill="#142540"/>
+  <!-- Kahi layers -->
+  <path d="M120 170 Q160 140 200 145 Q240 140 280 170" stroke="#7ec8f8" stroke-width="3" fill="none"/>
+  <path d="M130 160 Q165 135 200 138 Q235 135 270 160" stroke="#4da8e8" stroke-width="2.5" fill="none"/>
+  <path d="M140 150 Q170 130 200 132 Q230 130 260 150" stroke="#60b5f0" stroke-width="2" fill="none"/>
+  <path d="M150 142 Q175 125 200 127 Q225 125 250 142" stroke="#7ec8f8" stroke-width="2" fill="none"/>
+  <!-- Gaimer cream on top -->
+  <ellipse cx="200" cy="130" rx="45" ry="25" fill="#f5f0e0" opacity="0.9"/>
+  <ellipse cx="200" cy="127" rx="35" ry="18" fill="#fff8e8"/>
+  <ellipse cx="190" cy="124" rx="12" ry="8" fill="white" opacity="0.4"/>
+  <!-- Honey drizzle -->
+  <path d="M175 135 Q180 155 185 170" stroke="#4da8e8" stroke-width="2" opacity="0.7" stroke-linecap="round"/>
+  <path d="M215 138 Q220 158 222 168" stroke="#4da8e8" stroke-width="1.5" opacity="0.6" stroke-linecap="round"/>
+  <!-- Plate rim highlight -->
+  <ellipse cx="200" cy="180" rx="140" ry="80" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.3"/>
+  <!-- Steam -->
+  <path d="M180 105 Q175 90 182 75" stroke="#f5f0e8" stroke-width="1.5" opacity="0.3" fill="none" stroke-linecap="round"/>
+  <path d="M200 100 Q195 82 202 68" stroke="#f5f0e8" stroke-width="1.5" opacity="0.2" fill="none" stroke-linecap="round"/>
+  <path d="M220 103 Q215 88 221 72" stroke="#f5f0e8" stroke-width="1.5" opacity="0.25" fill="none" stroke-linecap="round"/>
+</svg>

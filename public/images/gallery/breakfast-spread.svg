@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="max-width:100%;height:auto;">
+  <defs>
+    <linearGradient id="bs-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0f1e36"/>
+    </linearGradient>
+    <radialGradient id="bs-plate" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f5f0e0"/>
+      <stop offset="90%" style="stop-color:#ede5cc"/>
+      <stop offset="100%" style="stop-color:#d4cbb0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bs-bg)"/>
+  <!-- Wooden table texture -->
+  <rect width="600" height="400" fill="#2d2318" opacity="0.6"/>
+  <line x1="0" y1="50" x2="600" y2="50" stroke="#3d3025" stroke-width="0.3" opacity="0.3"/>
+  <line x1="0" y1="120" x2="600" y2="120" stroke="#3d3025" stroke-width="0.3" opacity="0.3"/>
+  <line x1="0" y1="200" x2="600" y2="200" stroke="#3d3025" stroke-width="0.3" opacity="0.2"/>
+  <line x1="0" y1="280" x2="600" y2="280" stroke="#3d3025" stroke-width="0.3" opacity="0.3"/>
+  <line x1="0" y1="350" x2="600" y2="350" stroke="#3d3025" stroke-width="0.3" opacity="0.3"/>
+
+  <!-- Main plate - center (kahi) -->
+  <ellipse cx="300" cy="200" rx="95" ry="85" fill="url(#bs-plate)" stroke="#4da8e8" stroke-width="1.5"/>
+  <ellipse cx="300" cy="200" rx="80" ry="72" fill="none" stroke="#d4cbb0" stroke-width="0.5"/>
+  <!-- Kahi on plate -->
+  <rect x="255" y="170" width="90" height="50" rx="5" fill="#4da8e8"/>
+  <path d="M260 175 Q300 170 340 175" fill="none" stroke="#d0eaff" stroke-width="1" opacity="0.6"/>
+  <path d="M260 185 Q300 182 340 185" fill="none" stroke="#3d90c8" stroke-width="0.5" opacity="0.5"/>
+  <path d="M260 195 Q300 192 340 195" fill="none" stroke="#d0eaff" stroke-width="0.5" opacity="0.5"/>
+  <!-- Honey drizzle on kahi -->
+  <path d="M270 180 Q290 175 310 180 Q330 177 340 180" fill="none" stroke="#60b5f0" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  
+  <!-- Cream bowl - top left -->
+  <ellipse cx="150" cy="110" rx="60" ry="55" fill="url(#bs-plate)" stroke="#4da8e8" stroke-width="1"/>
+  <ellipse cx="150" cy="110" rx="48" ry="44" fill="#f5f0e0"/>
+  <ellipse cx="150" cy="108" rx="40" ry="36" fill="#ffffff" opacity="0.8"/>
+  <!-- Cream swirl -->
+  <path d="M130 105 Q145 100 160 108 Q170 112 165 115" fill="none" stroke="#ede5cc" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Tea glass - top right -->
+  <path d="M450 70 Q446 85 448 110 Q446 125 450 140 L480 140 Q484 125 482 110 Q484 85 480 70 Z" fill="#60b5f0" opacity="0.7" stroke="#4da8e8" stroke-width="1"/>
+  <rect x="448" y="68" width="34" height="4" rx="2" fill="#4da8e8"/>
+  <ellipse cx="465" cy="145" rx="22" ry="5" fill="#3d2d1e" stroke="#4da8e8" stroke-width="0.8"/>
+  
+  <!-- Dates plate - right -->
+  <ellipse cx="490" cy="220" rx="55" ry="50" fill="url(#bs-plate)" stroke="#4da8e8" stroke-width="1"/>
+  <!-- Dates -->
+  <ellipse cx="475" cy="210" rx="12" ry="7" fill="#1a2e4a" transform="rotate(-10 475 210)"/>
+  <ellipse cx="495" cy="215" rx="11" ry="6" fill="#3d2010" transform="rotate(5 495 215)"/>
+  <ellipse cx="485" cy="225" rx="12" ry="7" fill="#1a2e4a" transform="rotate(-5 485 225)"/>
+  <ellipse cx="500" cy="230" rx="10" ry="6" fill="#3d2010" transform="rotate(15 500 230)"/>
+  <ellipse cx="480" cy="235" rx="11" ry="6" fill="#1a2e4a"/>
+
+  <!-- Honey jar - bottom left -->
+  <rect x="60" y="270" width="50" height="70" rx="8" fill="#4da8e8" opacity="0.6" stroke="#3d90c8" stroke-width="1"/>
+  <rect x="65" y="275" width="40" height="55" rx="5" fill="#4da8e8" opacity="0.8"/>
+  <rect x="60" y="265" width="50" height="10" rx="3" fill="#3d2d1e" stroke="#4da8e8" stroke-width="0.5"/>
+  
+  <!-- Bread/samoon - bottom center -->
+  <ellipse cx="250" cy="330" rx="55" ry="30" fill="#60b5f0" opacity="0.8"/>
+  <ellipse cx="250" cy="325" rx="50" ry="25" fill="#4da8e8"/>
+  <path d="M205 325 Q225 315 250 318 Q275 315 295 325" fill="none" stroke="#3d90c8" stroke-width="1" opacity="0.5"/>
+  <!-- Score marks -->
+  <line x1="230" y1="318" x2="235" y2="328" stroke="#3d90c8" stroke-width="0.5" opacity="0.4"/>
+  <line x1="250" y1="316" x2="250" y2="328" stroke="#3d90c8" stroke-width="0.5" opacity="0.4"/>
+  <line x1="270" y1="318" x2="265" y2="328" stroke="#3d90c8" stroke-width="0.5" opacity="0.4"/>
+  
+  <!-- Cheese plate - left middle -->
+  <ellipse cx="100" cy="260" rx="45" ry="40" fill="url(#bs-plate)" stroke="#4da8e8" stroke-width="0.8"/>
+  <rect x="80" y="245" width="40" height="25" rx="3" fill="#f5f0e0"/>
+  <rect x="82" y="247" width="36" height="21" fill="#faf8f0" opacity="0.7"/>
+  
+  <!-- Small bowl - nuts (top center) -->
+  <ellipse cx="300" cy="60" rx="40" ry="35" fill="#3d2d1e" stroke="#4da8e8" stroke-width="1"/>
+  <ellipse cx="300" cy="58" rx="35" ry="30" fill="#4a3828"/>
+  <!-- Nuts -->
+  <ellipse cx="290" cy="55" rx="6" ry="4" fill="#8b6914" transform="rotate(-20 290 55)"/>
+  <ellipse cx="305" cy="52" rx="5" ry="4" fill="#9a7818" transform="rotate(10 305 52)"/>
+  <ellipse cx="298" cy="60" rx="6" ry="4" fill="#8b6914" transform="rotate(5 298 60)"/>
+  <ellipse cx="312" cy="58" rx="5" ry="3" fill="#9a7818"/>
+  
+  <!-- Napkin/cloth corner - bottom right -->
+  <path d="M500 350 Q530 340 560 345 L600 340 L600 400 L500 400 Z" fill="#60b5f0" opacity="0.3"/>
+  <path d="M510 360 Q540 352 570 355" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.4"/>
+  <path d="M510 370 Q540 362 570 365" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Fork -->
+  <line x1="520" y1="130" x2="530" y2="310" stroke="#4da8e8" stroke-width="2"/>
+  <line x1="517" y1="130" x2="519" y2="155" stroke="#4da8e8" stroke-width="1"/>
+  <line x1="520" y1="130" x2="521" y2="155" stroke="#4da8e8" stroke-width="1"/>
+  <line x1="523" y1="130" x2="523" y2="155" stroke="#4da8e8" stroke-width="1"/>
+  <line x1="526" y1="130" x2="525" y2="155" stroke="#4da8e8" stroke-width="1"/>
+  
+  <!-- Warm glow overlay -->
+  <circle cx="300" cy="200" r="200" fill="#4da8e8" opacity="0.04"/>
+</svg>

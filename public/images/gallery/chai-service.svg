@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="max-width:100%;height:auto;">
+  <defs>
+    <linearGradient id="cs-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1e36"/>
+      <stop offset="100%" style="stop-color:#0a1628"/>
+    </linearGradient>
+    <linearGradient id="cs-tea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#60b5f0"/>
+      <stop offset="100%" style="stop-color:#8b4513"/>
+    </linearGradient>
+    <linearGradient id="cs-glass" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f5f0e0;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#f5f0e0;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="cs-gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4da8e8"/>
+      <stop offset="100%" style="stop-color:#3d90c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#cs-bg)"/>
+
+  <!-- Table surface -->
+  <rect x="0" y="300" width="600" height="100" fill="#2d2318"/>
+  <rect x="0" y="298" width="600" height="3" fill="#3d3025"/>
+  
+  <!-- Ornate tray -->
+  <ellipse cx="300" cy="310" rx="240" ry="50" fill="#3d2d1e"/>
+  <ellipse cx="300" cy="305" rx="230" ry="45" fill="#4a3828" stroke="#4da8e8" stroke-width="2"/>
+  <ellipse cx="300" cy="305" rx="220" ry="42" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.5"/>
+  <!-- Tray pattern -->
+  <path d="M120 305 Q180 290 240 305 Q300 290 360 305 Q420 290 480 305" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Glass 1 - Center (largest, istikan shape) -->
+  <path d="M275 180 Q270 200 272 240 Q270 270 275 290 L325 290 Q330 270 328 240 Q330 200 325 180 Z" fill="url(#cs-glass)" stroke="#4da8e8" stroke-width="1.5"/>
+  <!-- Tea liquid -->
+  <path d="M277 195 Q275 220 277 255 Q276 275 278 288 L322 288 Q324 275 323 255 Q325 220 323 195 Z" fill="url(#cs-tea)" opacity="0.8"/>
+  <!-- Glass rim gold band -->
+  <rect x="273" y="178" width="54" height="5" rx="2" fill="url(#cs-gold)"/>
+  <!-- Saucer -->
+  <ellipse cx="300" cy="295" rx="35" ry="8" fill="#4a3828" stroke="#4da8e8" stroke-width="1"/>
+  <!-- Steam -->
+  <path d="M290 170 Q285 155 290 140" fill="none" stroke="#f5f0e0" stroke-width="1" opacity="0.2"/>
+  <path d="M305 168 Q310 150 305 135" fill="none" stroke="#f5f0e0" stroke-width="1" opacity="0.15"/>
+  
+  <!-- Glass 2 - Left -->
+  <path d="M135 210 Q131 225 133 255 Q131 275 135 295 L175 295 Q179 275 177 255 Q179 225 175 210 Z" fill="url(#cs-glass)" stroke="#4da8e8" stroke-width="1.2"/>
+  <path d="M137 220 Q135 240 137 260 Q136 278 138 293 L172 293 Q174 278 173 260 Q175 240 173 220 Z" fill="url(#cs-tea)" opacity="0.75"/>
+  <rect x="133" y="208" width="44" height="4" rx="2" fill="url(#cs-gold)"/>
+  <ellipse cx="155" cy="298" rx="28" ry="7" fill="#4a3828" stroke="#4da8e8" stroke-width="0.8"/>
+  <path d="M145 203 Q142 190 145 178" fill="none" stroke="#f5f0e0" stroke-width="0.8" opacity="0.15"/>
+
+  <!-- Glass 3 - Right -->
+  <path d="M425 210 Q421 225 423 255 Q421 275 425 295 L465 295 Q469 275 467 255 Q469 225 465 210 Z" fill="url(#cs-glass)" stroke="#4da8e8" stroke-width="1.2"/>
+  <path d="M427 220 Q425 240 427 260 Q426 278 428 293 L462 293 Q464 278 463 260 Q465 240 463 220 Z" fill="url(#cs-tea)" opacity="0.75"/>
+  <rect x="423" y="208" width="44" height="4" rx="2" fill="url(#cs-gold)"/>
+  <ellipse cx="445" cy="298" rx="28" ry="7" fill="#4a3828" stroke="#4da8e8" stroke-width="0.8"/>
+  <path d="M440 203 Q437 190 440 178" fill="none" stroke="#f5f0e0" stroke-width="0.8" opacity="0.15"/>
+  
+  <!-- Glass 4 - Far left (smaller, background) -->
+  <path d="M60 235 Q57 248 59 268 Q57 282 60 295 L90 295 Q93 282 91 268 Q93 248 90 235 Z" fill="url(#cs-glass)" stroke="#4da8e8" stroke-width="1" opacity="0.7"/>
+  <path d="M62 242 Q60 255 62 272 Q61 283 63 293 L87 293 Q89 283 88 272 Q90 255 88 242 Z" fill="url(#cs-tea)" opacity="0.6"/>
+  <rect x="58" y="233" width="34" height="3" rx="1.5" fill="url(#cs-gold)" opacity="0.7"/>
+  
+  <!-- Glass 5 - Far right -->
+  <path d="M510 235 Q507 248 509 268 Q507 282 510 295 L540 295 Q543 282 541 268 Q543 248 540 235 Z" fill="url(#cs-glass)" stroke="#4da8e8" stroke-width="1" opacity="0.7"/>
+  <path d="M512 242 Q510 255 512 272 Q511 283 513 293 L537 293 Q539 283 538 272 Q540 255 538 242 Z" fill="url(#cs-tea)" opacity="0.6"/>
+  <rect x="508" y="233" width="34" height="3" rx="1.5" fill="url(#cs-gold)" opacity="0.7"/>
+  
+  <!-- Sugar cubes -->
+  <rect x="340" y="285" width="12" height="10" rx="1" fill="#f5f0e0" opacity="0.8"/>
+  <rect x="348" y="282" width="12" height="10" rx="1" fill="#ede5cc" opacity="0.7"/>
+  <rect x="355" y="286" width="12" height="10" rx="1" fill="#f5f0e0" opacity="0.75"/>
+  
+  <!-- Spoon -->
+  <path d="M220 290 Q215 285 212 270 Q215 250 220 240" fill="none" stroke="#4da8e8" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="220" cy="238" rx="5" ry="8" fill="#4da8e8" opacity="0.8"/>
+  
+  <!-- Teapot in background -->
+  <path d="M480 120 Q500 100 520 110 Q540 100 545 120 Q550 140 545 160 Q540 180 520 190 Q500 195 490 190 Q475 180 470 160 Q468 140 480 120 Z" fill="#3d2d1e" stroke="#4da8e8" stroke-width="1.5"/>
+  <!-- Teapot spout -->
+  <path d="M470 140 Q450 135 440 125 Q435 118 438 115" fill="none" stroke="#3d2d1e" stroke-width="4"/>
+  <path d="M470 140 Q450 135 440 125 Q435 118 438 115" fill="none" stroke="#4da8e8" stroke-width="1"/>
+  <!-- Teapot handle -->
+  <path d="M545 135 Q565 130 570 150 Q565 170 545 165" fill="none" stroke="#4da8e8" stroke-width="3"/>
+  <!-- Teapot lid -->
+  <ellipse cx="510" cy="108" rx="20" ry="5" fill="#4a3828" stroke="#4da8e8" stroke-width="1"/>
+  <circle cx="510" cy="100" r="5" fill="#4da8e8"/>
+  
+  <!-- Ambient warm light -->
+  <circle cx="300" cy="150" r="100" fill="#4da8e8" opacity="0.05"/>
+  <circle cx="300" cy="200" r="150" fill="#60b5f0" opacity="0.03"/>
+</svg>

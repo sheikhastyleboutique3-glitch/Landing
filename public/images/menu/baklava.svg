@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#0a1628"/>
+  <!-- Plate -->
+  <ellipse cx="200" cy="190" rx="130" ry="70" fill="#0f1e36" stroke="#4da8e8" stroke-width="1"/>
+  <!-- Baklava diamond pieces -->
+  <polygon points="160,160 180,145 200,160 180,175" fill="#60b5f0" stroke="#4da8e8" stroke-width="0.5"/>
+  <polygon points="180,160 200,145 220,160 200,175" fill="#2d7ab8" stroke="#4da8e8" stroke-width="0.5"/>
+  <polygon points="200,160 220,145 240,160 220,175" fill="#60b5f0" stroke="#4da8e8" stroke-width="0.5"/>
+  <polygon points="170,175 190,160 210,175 190,190" fill="#2d7ab8" stroke="#4da8e8" stroke-width="0.5"/>
+  <polygon points="190,175 210,160 230,175 210,190" fill="#60b5f0" stroke="#4da8e8" stroke-width="0.5"/>
+  <polygon points="210,175 230,160 250,175 230,190" fill="#2d7ab8" stroke="#4da8e8" stroke-width="0.5"/>
+  <polygon points="180,190 200,175 220,190 200,205" fill="#60b5f0" stroke="#4da8e8" stroke-width="0.5"/>
+  <polygon points="200,190 220,175 240,190 220,205" fill="#2d7ab8" stroke="#4da8e8" stroke-width="0.5"/>
+  <!-- Pistachio dots -->
+  <circle cx="180" cy="158" r="2" fill="#6b8f3c"/>
+  <circle cx="200" cy="158" r="2" fill="#6b8f3c"/>
+  <circle cx="220" cy="158" r="2" fill="#6b8f3c"/>
+  <circle cx="190" cy="173" r="2" fill="#6b8f3c"/>
+  <circle cx="210" cy="173" r="2" fill="#6b8f3c"/>
+  <circle cx="230" cy="173" r="2" fill="#6b8f3c"/>
+  <circle cx="200" cy="188" r="2" fill="#6b8f3c"/>
+  <circle cx="220" cy="188" r="2" fill="#6b8f3c"/>
+  <!-- Syrup drizzle -->
+  <path d="M155 155 Q158 165 162 175" stroke="#4da8e8" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+  <path d="M242 152 Q245 162 248 172" stroke="#4da8e8" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+  <!-- Highlight -->
+  <ellipse cx="195" cy="155" rx="8" ry="4" fill="white" opacity="0.1"/>
+</svg>

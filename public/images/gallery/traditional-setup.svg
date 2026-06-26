@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="max-width:100%;height:auto;">
+  <defs>
+    <linearGradient id="ts-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0f1e36"/>
+    </linearGradient>
+    <radialGradient id="ts-plate" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f5f0e0"/>
+      <stop offset="85%" style="stop-color:#ede5cc"/>
+      <stop offset="100%" style="stop-color:#d4cbb0"/>
+    </radialGradient>
+    <linearGradient id="ts-cloth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60b5f0"/>
+      <stop offset="50%" style="stop-color:#b8651e"/>
+      <stop offset="100%" style="stop-color:#60b5f0"/>
+    </linearGradient>
+    <pattern id="ts-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none"/>
+      <path d="M0 10 L10 0 L20 10 L10 20 Z" fill="none" stroke="#4da8e8" stroke-width="0.3" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="400" fill="url(#ts-bg)"/>
+
+  <!-- Tablecloth/mat -->
+  <rect x="30" y="60" width="540" height="310" rx="5" fill="url(#ts-cloth)" opacity="0.3"/>
+  <rect x="30" y="60" width="540" height="310" rx="5" fill="url(#ts-pattern)"/>
+  <!-- Cloth border -->
+  <rect x="30" y="60" width="540" height="310" rx="5" fill="none" stroke="#4da8e8" stroke-width="2"/>
+  <rect x="40" y="70" width="520" height="290" rx="3" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.5"/>
+  
+  <!-- Large central platter -->
+  <ellipse cx="300" cy="230" rx="130" ry="100" fill="url(#ts-plate)" stroke="#4da8e8" stroke-width="2"/>
+  <ellipse cx="300" cy="230" rx="115" ry="88" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.4"/>
+  <!-- Platter ornamental edge -->
+  <ellipse cx="300" cy="230" rx="122" ry="94" fill="none" stroke="#4da8e8" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.3"/>
+  
+  <!-- Food on platter - kahi pieces -->
+  <rect x="240" y="195" width="50" height="30" rx="3" fill="#4da8e8"/>
+  <path d="M242 200 Q265 198 288 200" fill="none" stroke="#d0eaff" stroke-width="0.5"/>
+  <path d="M242 208 Q265 206 288 208" fill="none" stroke="#3d90c8" stroke-width="0.5"/>
+  
+  <rect x="300" y="200" width="50" height="30" rx="3" fill="#e8c96e"/>
+  <path d="M302 205 Q325 203 348 205" fill="none" stroke="#d0eaff" stroke-width="0.5"/>
+  <path d="M302 215 Q325 213 348 215" fill="none" stroke="#3d90c8" stroke-width="0.5"/>
+  
+  <rect x="260" y="235" width="45" height="28" rx="3" fill="#4da8e8"/>
+  <rect x="315" y="238" width="45" height="28" rx="3" fill="#e8c96e"/>
+  
+  <!-- Garnish - fresh herbs -->
+  <path d="M270 190 Q275 183 280 185 Q278 180 282 178" fill="none" stroke="#6b8e23" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M340 193 Q345 186 350 188" fill="none" stroke="#6b8e23" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Small bowl top-left - cream/gaimer -->
+  <ellipse cx="130" cy="120" rx="50" ry="40" fill="#4a3828" stroke="#4da8e8" stroke-width="1.5"/>
+  <ellipse cx="130" cy="118" rx="42" ry="34" fill="#f5f0e0"/>
+  <ellipse cx="130" cy="116" rx="35" ry="28" fill="#ffffff" opacity="0.7"/>
+  <!-- Honey on cream -->
+  <path d="M115 115 Q125 112 140 116 Q150 113 155 116" fill="none" stroke="#4da8e8" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Small bowl top-right - dates -->
+  <ellipse cx="470" cy="120" rx="50" ry="40" fill="#4a3828" stroke="#4da8e8" stroke-width="1.5"/>
+  <ellipse cx="470" cy="118" rx="42" ry="34" fill="#3d2d1e"/>
+  <!-- Dates in bowl -->
+  <ellipse cx="460" cy="115" rx="10" ry="6" fill="#3d1f0e" transform="rotate(-10 460 115)"/>
+  <ellipse cx="475" cy="112" rx="10" ry="5" fill="#1a2e4a" transform="rotate(5 475 112)"/>
+  <ellipse cx="468" cy="122" rx="9" ry="5" fill="#3d1f0e"/>
+  <ellipse cx="482" cy="120" rx="9" ry="5" fill="#1a2e4a" transform="rotate(-8 482 120)"/>
+
+  <!-- Tea glasses arrangement - bottom -->
+  <!-- Glass 1 -->
+  <path d="M130 300 Q127 312 129 330 Q127 340 130 350 L155 350 Q158 340 156 330 Q158 312 155 300 Z" fill="#60b5f0" opacity="0.6" stroke="#4da8e8" stroke-width="1"/>
+  <rect x="128" y="298" width="29" height="3" rx="1.5" fill="#4da8e8"/>
+  <ellipse cx="142" cy="353" rx="18" ry="5" fill="#4a3828" stroke="#4da8e8" stroke-width="0.5"/>
+  
+  <!-- Glass 2 -->
+  <path d="M430 300 Q427 312 429 330 Q427 340 430 350 L455 350 Q458 340 456 330 Q458 312 455 300 Z" fill="#60b5f0" opacity="0.6" stroke="#4da8e8" stroke-width="1"/>
+  <rect x="428" y="298" width="29" height="3" rx="1.5" fill="#4da8e8"/>
+  <ellipse cx="442" cy="353" rx="18" ry="5" fill="#4a3828" stroke="#4da8e8" stroke-width="0.5"/>
+  
+  <!-- Honey pot - left side -->
+  <path d="M60 220 Q55 210 60 200 Q70 190 80 195 Q90 190 100 200 Q105 210 100 220 L98 260 Q98 270 80 272 Q62 270 62 260 Z" fill="#4da8e8" opacity="0.7" stroke="#3d90c8" stroke-width="1.5"/>
+  <ellipse cx="80" cy="200" rx="20" ry="8" fill="#3d2d1e" stroke="#4da8e8" stroke-width="1"/>
+  <!-- Honey dipper -->
+  <line x1="80" y1="190" x2="85" y2="160" stroke="#3d90c8" stroke-width="2"/>
+  <rect x="80" y="155" width="10" height="12" rx="3" fill="#3d90c8"/>
+  <line x1="81" y1="158" x2="89" y2="158" stroke="#4da8e8" stroke-width="0.5"/>
+  <line x1="81" y1="161" x2="89" y2="161" stroke="#4da8e8" stroke-width="0.5"/>
+  <line x1="81" y1="164" x2="89" y2="164" stroke="#4da8e8" stroke-width="0.5"/>
+  
+  <!-- Bread basket - right side -->
+  <path d="M490 240 Q480 230 490 220 Q510 210 540 215 Q560 220 555 235 Q560 250 550 260 Q530 270 510 268 Q490 265 490 240 Z" fill="#4a3828" stroke="#4da8e8" stroke-width="1"/>
+  <!-- Bread pieces -->
+  <ellipse cx="520" cy="235" rx="22" ry="12" fill="#4da8e8" opacity="0.8"/>
+  <ellipse cx="510" cy="240" rx="18" ry="10" fill="#e8c96e" opacity="0.7" transform="rotate(-15 510 240)"/>
+  <path d="M505 232 Q515 228 530 232" fill="none" stroke="#3d90c8" stroke-width="0.5"/>
+  
+  <!-- Decorative incense/candle - center top -->
+  <rect x="293" y="85" width="14" height="30" rx="2" fill="#3d2d1e" stroke="#4da8e8" stroke-width="0.8"/>
+  <!-- Flame -->
+  <path d="M300 80 Q297 72 300 65 Q303 72 300 80" fill="#4da8e8" opacity="0.8"/>
+  <path d="M300 78 Q299 74 300 70 Q301 74 300 78" fill="#f5f0e0" opacity="0.6"/>
+  <!-- Smoke wisps -->
+  <path d="M300 62 Q295 50 300 40" fill="none" stroke="#f5f0e0" stroke-width="0.5" opacity="0.2"/>
+  <path d="M300 60 Q305 48 300 38" fill="none" stroke="#f5f0e0" stroke-width="0.5" opacity="0.15"/>
+  
+  <!-- Ambient warm glow -->
+  <circle cx="300" cy="200" r="180" fill="#4da8e8" opacity="0.03"/>
+  <circle cx="300" cy="85" r="40" fill="#4da8e8" opacity="0.05"/>
+</svg>
