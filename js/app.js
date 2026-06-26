@@ -7,7 +7,7 @@
   const API = '';
   // Detect if running on GitHub Pages (no backend) - use static JSON files
   const isStatic = window.location.hostname.includes('github.io') || window.location.protocol === 'file:';
-  const DATA_PATH = isStatic ? '/Landing/data' : '/api';
+  const DATA_PATH = isStatic ? 'data' : '/api';
 
   // ========== LOADER ==========
   const loader = document.getElementById('loader');
@@ -72,7 +72,7 @@
   });
 
   // Fix image paths for GitHub Pages
-  const IMG_PREFIX = isStatic ? '/Landing' : '';
+  const IMG_PREFIX = '';
 
   // ========== LOAD MENU ==========
   async function loadMenu(category='breakfast') {

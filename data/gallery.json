@@ -1,10 +1,10 @@
 [
-  {"id": "1", "title": "Golden Kahi Layers", "titleAr": "طبقات الكاهي الذهبية", "image": "/images/gallery/kahi-layers.svg", "category": "food"},
-  {"id": "2", "title": "Fresh Gaimer Cream", "titleAr": "قيمر طازج", "image": "/images/gallery/gaimer-cream.svg", "category": "food"},
-  {"id": "3", "title": "Iraqi Chai Service", "titleAr": "خدمة الشاي العراقي", "image": "/images/gallery/chai-service.svg", "category": "drinks"},
-  {"id": "4", "title": "Breakfast Spread", "titleAr": "مائدة الفطور", "image": "/images/gallery/breakfast-spread.svg", "category": "food"},
-  {"id": "5", "title": "Our Restaurant", "titleAr": "مطعمنا", "image": "/images/gallery/restaurant.svg", "category": "interior"},
-  {"id": "6", "title": "Baklava Close-up", "titleAr": "بقلاوة عن قرب", "image": "/images/gallery/baklava-closeup.svg", "category": "food"},
-  {"id": "7", "title": "Traditional Setup", "titleAr": "إعداد تقليدي", "image": "/images/gallery/traditional-setup.svg", "category": "interior"},
-  {"id": "8", "title": "Date Syrup Drizzle", "titleAr": "دبس التمر", "image": "/images/gallery/date-syrup.svg", "category": "food"}
+  {"id": "1", "title": "Golden Kahi Layers", "titleAr": "طبقات الكاهي الذهبية", "image": "images/gallery/kahi-layers.svg", "category": "food"},
+  {"id": "2", "title": "Fresh Gaimer Cream", "titleAr": "قيمر طازج", "image": "images/gallery/gaimer-cream.svg", "category": "food"},
+  {"id": "3", "title": "Iraqi Chai Service", "titleAr": "خدمة الشاي العراقي", "image": "images/gallery/chai-service.svg", "category": "drinks"},
+  {"id": "4", "title": "Breakfast Spread", "titleAr": "مائدة الفطور", "image": "images/gallery/breakfast-spread.svg", "category": "food"},
+  {"id": "5", "title": "Our Restaurant", "titleAr": "مطعمنا", "image": "images/gallery/restaurant.svg", "category": "interior"},
+  {"id": "6", "title": "Baklava Close-up", "titleAr": "بقلاوة عن قرب", "image": "images/gallery/baklava-closeup.svg", "category": "food"},
+  {"id": "7", "title": "Traditional Setup", "titleAr": "إعداد تقليدي", "image": "images/gallery/traditional-setup.svg", "category": "interior"},
+  {"id": "8", "title": "Date Syrup Drizzle", "titleAr": "دبس التمر", "image": "images/gallery/date-syrup.svg", "category": "food"}
 ]
