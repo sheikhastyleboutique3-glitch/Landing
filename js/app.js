@@ -4,9 +4,9 @@
  */
 (function() {
   'use strict';
+  try {
   const API = '';
-  // Detect if running on GitHub Pages (no backend) - use static JSON files
-  const isStatic = window.location.hostname.includes('github.io') || window.location.protocol === 'file:';
+  const isStatic = (window.location.hostname || '').includes('github.io') || window.location.protocol === 'file:';
   const DATA_PATH = isStatic ? 'data' : '/api';
 
   // ========== LOADER ==========
@@ -301,4 +301,5 @@
     loadGallery();
     loadTestimonials();
   }
+  } catch(e) { console.error('App error:', e); }
 })();
