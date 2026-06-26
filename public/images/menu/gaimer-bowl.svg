@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#0a1628"/>
+  <!-- Bowl -->
+  <ellipse cx="200" cy="210" rx="90" ry="35" fill="#0f1e36" stroke="#4da8e8" stroke-width="1"/>
+  <path d="M115 180 Q120 220 200 225 Q280 220 285 180" fill="#142540" stroke="#4da8e8" stroke-width="1.5"/>
+  <!-- Gaimer cream filling -->
+  <ellipse cx="200" cy="175" rx="80" ry="35" fill="#f5f0e0"/>
+  <ellipse cx="200" cy="170" rx="65" ry="28" fill="#fff8e8"/>
+  <!-- Cream swirl texture -->
+  <path d="M160 170 Q180 162 200 168 Q220 162 240 170" stroke="#f5e8c0" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M170 178 Q190 172 210 176 Q225 172 235 178" stroke="#f5e8c0" stroke-width="1" fill="none" opacity="0.4"/>
+  <!-- Highlight -->
+  <ellipse cx="180" cy="165" rx="20" ry="10" fill="white" opacity="0.2"/>
+  <!-- Honey drizzle on top -->
+  <path d="M175 168 Q185 165 200 167 Q215 165 225 168" stroke="#4da8e8" stroke-width="2" opacity="0.7" stroke-linecap="round"/>
+  <path d="M185 173 Q200 170 215 173" stroke="#4da8e8" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+  <!-- Bread pieces beside -->
+  <path d="M300 185 Q310 175 320 180 Q325 190 315 195 Q305 198 300 190Z" fill="#60b5f0" opacity="0.7"/>
+  <path d="M310 195 Q318 188 325 192 Q328 200 320 203 Q312 205 310 198Z" fill="#2d7ab8" opacity="0.6"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#0a1628"/>
+  <!-- Large serving dishes stacked -->
+  <ellipse cx="150" cy="210" rx="70" ry="35" fill="#0f1e36" stroke="#4da8e8" stroke-width="1"/>
+  <ellipse cx="250" cy="210" rx="70" ry="35" fill="#0f1e36" stroke="#4da8e8" stroke-width="1"/>
+  <ellipse cx="200" cy="190" rx="80" ry="40" fill="#142540" stroke="#4da8e8" stroke-width="1.5"/>
+  <!-- Cloche lid -->
+  <path d="M130 170 Q165 110 200 105 Q235 110 270 170" fill="#4da8e8" opacity="0.2" stroke="#4da8e8" stroke-width="1.5"/>
+  <ellipse cx="200" cy="170" rx="70" ry="22" fill="none" stroke="#4da8e8" stroke-width="1"/>
+  <!-- Handle on top -->
+  <circle cx="200" cy="100" r="8" fill="none" stroke="#4da8e8" stroke-width="2"/>
+  <circle cx="200" cy="100" r="3" fill="#4da8e8"/>
+  <!-- People silhouettes (suggesting group) -->
+  <circle cx="80" cy="140" r="8" fill="#f5f0e8" opacity="0.1"/>
+  <path d="M70 165 Q80 155 90 165" fill="#f5f0e8" opacity="0.1"/>
+  <circle cx="320" cy="140" r="8" fill="#f5f0e8" opacity="0.1"/>
+  <path d="M310 165 Q320 155 330 165" fill="#f5f0e8" opacity="0.1"/>
+  <!-- Stars/quality indicators -->
+  <path d="M160 75 L163 82 L170 82 L165 87 L167 94 L160 90 L153 94 L155 87 L150 82 L157 82Z" fill="#4da8e8" opacity="0.6"/>
+  <path d="M200 65 L203 72 L210 72 L205 77 L207 84 L200 80 L193 84 L195 77 L190 72 L197 72Z" fill="#4da8e8" opacity="0.7"/>
+  <path d="M240 75 L243 82 L250 82 L245 87 L247 94 L240 90 L233 94 L235 87 L230 82 L237 82Z" fill="#4da8e8" opacity="0.6"/>
+</svg>

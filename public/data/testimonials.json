@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Ahmed Al-Rashid",
+    "nameAr": "أحمد الراشد",
+    "rating": 5,
+    "text": "The best Kahi and Gaimer in all of Doha! Reminds me of home in Baghdad.",
+    "textAr": "أفضل كاهي وقيمر في الدوحة! يذكرني بالوطن في بغداد.",
+    "date": "2026-05-15",
+    "approved": true
+  },
+  {
+    "id": "2",
+    "name": "Fatima Hassan",
+    "nameAr": "فاطمة حسن",
+    "rating": 5,
+    "text": "Perfect breakfast spot. The breakfast platter is incredible value and the chai is authentic.",
+    "textAr": "مكان فطور مثالي. طبق الفطور قيمة رائعة والشاي أصيل.",
+    "date": "2026-04-22",
+    "approved": true
+  },
+  {
+    "id": "3",
+    "name": "Mohammad Khalid",
+    "nameAr": "محمد خالد",
+    "rating": 4,
+    "text": "Delivery was fast and the food was still warm and fresh. Will order again!",
+    "textAr": "التوصيل كان سريع والأكل لازال دافئ وطازج. سأطلب مرة أخرى!",
+    "date": "2026-06-01",
+    "approved": true
+  },
+  {
+    "id": "4",
+    "name": "Sara Al-Kubaisi",
+    "nameAr": "سارة الكبيسي",
+    "rating": 5,
+    "text": "The Royal Feast is perfect for family gatherings. Authentic Iraqi taste.",
+    "textAr": "الوليمة الملكية مثالية لتجمعات العائلة. مذاق عراقي أصيل.",
+    "date": "2026-03-10",
+    "approved": true
+  }
+]

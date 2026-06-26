@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="max-width:100%;height:auto;">
+  <defs>
+    <linearGradient id="ri-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0d0a07"/>
+    </linearGradient>
+    <radialGradient id="ri-light1" cx="50%" cy="30%" r="30%">
+      <stop offset="0%" style="stop-color:#4da8e8;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#0a1628;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="ri-light2" cx="20%" cy="25%" r="20%">
+      <stop offset="0%" style="stop-color:#4da8e8;stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#0a1628;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="ri-light3" cx="80%" cy="25%" r="20%">
+      <stop offset="0%" style="stop-color:#4da8e8;stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#0a1628;stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="ri-wall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d2318"/>
+      <stop offset="100%" style="stop-color:#0a1628"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#ri-bg)"/>
+  <!-- Back wall -->
+  <rect x="50" y="30" width="500" height="250" fill="url(#ri-wall)"/>
+
+  <!-- Arch details on wall -->
+  <path d="M120 280 L120 100 Q120 60 180 60 L230 60 Q280 60 280 100 L280 280" fill="none" stroke="#4da8e8" stroke-width="1.5" opacity="0.4"/>
+  <path d="M320 280 L320 100 Q320 60 380 60 L430 60 Q480 60 480 100 L480 280" fill="none" stroke="#4da8e8" stroke-width="1.5" opacity="0.4"/>
+  
+  <!-- Arabesque pattern on wall -->
+  <circle cx="200" cy="130" r="25" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="200" cy="130" r="18" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.2"/>
+  <circle cx="400" cy="130" r="25" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="400" cy="130" r="18" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.2"/>
+  
+  <!-- Hanging lanterns -->
+  <!-- Lantern 1 center -->
+  <line x1="300" y1="0" x2="300" y2="60" stroke="#4da8e8" stroke-width="1"/>
+  <path d="M280 60 Q280 50 300 48 Q320 50 320 60 L318 100 Q318 110 300 112 Q282 110 282 100 Z" fill="#0a1628" stroke="#4da8e8" stroke-width="1.5"/>
+  <path d="M285 65 Q300 62 315 65" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.5"/>
+  <path d="M284 75 Q300 72 316 75" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.5"/>
+  <path d="M283 85 Q300 82 317 85" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.5"/>
+  <circle cx="300" cy="80" r="8" fill="#4da8e8" opacity="0.3"/>
+  
+  <!-- Lantern 2 left -->
+  <line x1="150" y1="0" x2="150" y2="50" stroke="#4da8e8" stroke-width="0.8"/>
+  <path d="M135 50 Q135 42 150 40 Q165 42 165 50 L163 82 Q163 90 150 92 Q137 90 137 82 Z" fill="#0a1628" stroke="#4da8e8" stroke-width="1.2"/>
+  <circle cx="150" cy="68" r="6" fill="#4da8e8" opacity="0.25"/>
+  
+  <!-- Lantern 3 right -->
+  <line x1="450" y1="0" x2="450" y2="50" stroke="#4da8e8" stroke-width="0.8"/>
+  <path d="M435 50 Q435 42 450 40 Q465 42 465 50 L463 82 Q463 90 450 92 Q437 90 437 82 Z" fill="#0a1628" stroke="#4da8e8" stroke-width="1.2"/>
+  <circle cx="450" cy="68" r="6" fill="#4da8e8" opacity="0.25"/>
+
+  <!-- Floor -->
+  <rect x="0" y="280" width="600" height="120" fill="#0a1628"/>
+  <!-- Floor tiles pattern -->
+  <path d="M0 280 L100 280 L50 400 L0 400 Z" fill="#2d2318" opacity="0.3"/>
+  <path d="M100 280 L200 280 L150 400 L50 400 Z" fill="#0a1628" opacity="0.3"/>
+  <path d="M200 280 L300 280 L250 400 L150 400 Z" fill="#2d2318" opacity="0.3"/>
+  <path d="M300 280 L400 280 L350 400 L250 400 Z" fill="#0a1628" opacity="0.3"/>
+  <path d="M400 280 L500 280 L450 400 L350 400 Z" fill="#2d2318" opacity="0.3"/>
+  <path d="M500 280 L600 280 L550 400 L450 400 Z" fill="#0a1628" opacity="0.3"/>
+  
+  <!-- Tables -->
+  <!-- Table 1 - left -->
+  <rect x="80" y="290" width="100" height="5" rx="2" fill="#3d2d1e" stroke="#4da8e8" stroke-width="0.5"/>
+  <rect x="115" y="295" width="5" height="60" fill="#3d2d1e"/>
+  <rect x="140" y="295" width="5" height="60" fill="#3d2d1e"/>
+  <!-- Items on table -->
+  <ellipse cx="110" cy="288" rx="12" ry="4" fill="#4a3828" stroke="#4da8e8" stroke-width="0.5"/>
+  <ellipse cx="155" cy="288" rx="8" ry="3" fill="#60b5f0" opacity="0.5"/>
+  
+  <!-- Table 2 - center -->
+  <rect x="240" y="300" width="120" height="5" rx="2" fill="#3d2d1e" stroke="#4da8e8" stroke-width="0.5"/>
+  <rect x="280" y="305" width="5" height="55" fill="#3d2d1e"/>
+  <rect x="315" y="305" width="5" height="55" fill="#3d2d1e"/>
+  <!-- Items on table -->
+  <ellipse cx="270" cy="298" rx="15" ry="5" fill="#4a3828" stroke="#4da8e8" stroke-width="0.5"/>
+  <ellipse cx="330" cy="298" rx="10" ry="4" fill="#4a3828" stroke="#4da8e8" stroke-width="0.5"/>
+  <!-- Candle -->
+  <rect x="298" y="285" width="4" height="12" fill="#f5f0e0"/>
+  <ellipse cx="300" cy="283" rx="3" ry="4" fill="#4da8e8" opacity="0.8"/>
+  
+  <!-- Table 3 - right -->
+  <rect x="420" y="290" width="100" height="5" rx="2" fill="#3d2d1e" stroke="#4da8e8" stroke-width="0.5"/>
+  <rect x="455" y="295" width="5" height="60" fill="#3d2d1e"/>
+  <rect x="480" y="295" width="5" height="60" fill="#3d2d1e"/>
+  
+  <!-- Chairs silhouettes -->
+  <path d="M75 310 Q70 290 75 270 Q80 265 85 270 Q90 290 85 310" fill="#2d2318" stroke="#3d3025" stroke-width="0.5"/>
+  <path d="M185 310 Q180 290 185 270 Q190 265 195 270 Q200 290 195 310" fill="#2d2318" stroke="#3d3025" stroke-width="0.5"/>
+  <path d="M415 310 Q410 290 415 270 Q420 265 425 270 Q430 290 425 310" fill="#2d2318" stroke="#3d3025" stroke-width="0.5"/>
+  <path d="M525 310 Q520 290 525 270 Q530 265 535 270 Q540 290 535 310" fill="#2d2318" stroke="#3d3025" stroke-width="0.5"/>
+  
+  <!-- Shelf on back wall with items -->
+  <rect x="100" y="180" width="400" height="4" fill="#3d2d1e" stroke="#4da8e8" stroke-width="0.5"/>
+  <!-- Bottles/decor on shelf -->
+  <rect x="150" y="155" width="15" height="25" rx="3" fill="#4a3828" stroke="#4da8e8" stroke-width="0.5"/>
+  <rect x="200" y="160" width="12" height="20" rx="3" fill="#60b5f0" opacity="0.5"/>
+  <rect x="350" y="155" width="15" height="25" rx="3" fill="#4a3828" stroke="#4da8e8" stroke-width="0.5"/>
+  <rect x="420" y="158" width="12" height="22" rx="3" fill="#60b5f0" opacity="0.4"/>
+  
+  <!-- Light glow overlays -->
+  <rect width="600" height="400" fill="url(#ri-light1)"/>
+  <rect width="600" height="400" fill="url(#ri-light2)"/>
+  <rect width="600" height="400" fill="url(#ri-light3)"/>
+</svg>

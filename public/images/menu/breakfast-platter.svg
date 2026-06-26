@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#0a1628"/>
+  <!-- Large platter -->
+  <ellipse cx="200" cy="180" rx="160" ry="90" fill="#0f1e36" stroke="#4da8e8" stroke-width="1"/>
+  <!-- Small bowls -->
+  <ellipse cx="130" cy="155" rx="40" ry="25" fill="#142540" stroke="#60b5f0" stroke-width="1"/>
+  <ellipse cx="270" cy="155" rx="40" ry="25" fill="#142540" stroke="#60b5f0" stroke-width="1"/>
+  <ellipse cx="200" cy="200" rx="45" ry="28" fill="#142540" stroke="#60b5f0" stroke-width="1"/>
+  <!-- Cream in bowl -->
+  <ellipse cx="130" cy="150" rx="30" ry="15" fill="#f5f0e0"/>
+  <ellipse cx="130" cy="148" rx="20" ry="10" fill="#fff8e8" opacity="0.7"/>
+  <!-- Honey in bowl -->
+  <ellipse cx="270" cy="150" rx="30" ry="15" fill="#4da8e8"/>
+  <ellipse cx="270" cy="148" rx="18" ry="9" fill="#7ec8f8" opacity="0.6"/>
+  <!-- Bread/Kahi in center -->
+  <path d="M170 195 Q185 175 200 178 Q215 175 230 195" fill="#60b5f0" opacity="0.8"/>
+  <path d="M175 190 Q190 172 200 174 Q210 172 225 190" fill="#7ec8f8" opacity="0.5"/>
+  <!-- Eggs -->
+  <circle cx="160" cy="210" r="12" fill="#f5f0e0" opacity="0.9"/>
+  <circle cx="160" cy="209" r="6" fill="#4da8e8"/>
+  <!-- Cheese pieces -->
+  <rect x="235" y="195" width="18" height="12" rx="2" fill="#f5f0e0" opacity="0.7" transform="rotate(-10 240 200)"/>
+  <rect x="250" y="200" width="15" height="10" rx="2" fill="#fff8e8" opacity="0.6" transform="rotate(5 255 205)"/>
+  <!-- Tea glass -->
+  <rect x="310" cy="120" width="20" height="35" rx="3" fill="none" stroke="#4da8e8" stroke-width="1.5" y="120"/>
+  <rect x="312" y="130" width="16" height="20" rx="2" fill="#8b4513" opacity="0.6"/>
+  <!-- Steam from tea -->
+  <path d="M320 115 Q318 105 322 95" stroke="#f5f0e8" stroke-width="1" opacity="0.3" fill="none"/>
+</svg>

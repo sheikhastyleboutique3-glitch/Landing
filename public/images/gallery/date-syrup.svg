@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="max-width:100%;height:auto;">
+  <defs>
+    <linearGradient id="ds-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1e36"/>
+      <stop offset="100%" style="stop-color:#0a1628"/>
+    </linearGradient>
+    <linearGradient id="ds-syrup" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2e4a"/>
+      <stop offset="30%" style="stop-color:#3d1f0e"/>
+      <stop offset="70%" style="stop-color:#2a1508"/>
+      <stop offset="100%" style="stop-color:#1a0d05"/>
+    </linearGradient>
+    <linearGradient id="ds-drip" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2e4a;stop-opacity:0.9"/>
+      <stop offset="50%" style="stop-color:#3d1f0e"/>
+      <stop offset="100%" style="stop-color:#2a1508;stop-opacity:0.8"/>
+    </linearGradient>
+    <linearGradient id="ds-pastry" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d0eaff"/>
+      <stop offset="50%" style="stop-color:#4da8e8"/>
+      <stop offset="100%" style="stop-color:#3d90c8"/>
+    </linearGradient>
+    <radialGradient id="ds-glow" cx="50%" cy="40%" r="45%">
+      <stop offset="0%" style="stop-color:#4da8e8;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#0a1628;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#ds-bg)"/>
+  <rect width="600" height="400" fill="url(#ds-glow)"/>
+
+  <!-- Table surface -->
+  <rect x="0" y="300" width="600" height="100" fill="#2d2318" opacity="0.7"/>
+  
+  <!-- Plate -->
+  <ellipse cx="300" cy="300" rx="160" ry="60" fill="#3d2d1e"/>
+  <ellipse cx="300" cy="295" rx="155" ry="57" fill="#f5f0e0" stroke="#4da8e8" stroke-width="1.5"/>
+  <ellipse cx="300" cy="295" rx="140" ry="50" fill="none" stroke="#d4cbb0" stroke-width="0.5"/>
+  <!-- Plate decorative rim -->
+  <ellipse cx="300" cy="295" rx="148" ry="53" fill="none" stroke="#4da8e8" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.4"/>
+  
+  <!-- Pastry on plate - layered kahi piece -->
+  <path d="M200 260 L400 260 Q410 260 410 265 L410 290 Q410 295 400 295 L200 295 Q190 295 190 290 L190 265 Q190 260 200 260 Z" fill="url(#ds-pastry)"/>
+  <!-- Layer lines -->
+  <line x1="195" y1="268" x2="405" y2="268" stroke="#d0eaff" stroke-width="0.8" opacity="0.6"/>
+  <line x1="195" y1="274" x2="405" y2="274" stroke="#3d90c8" stroke-width="0.5" opacity="0.5"/>
+  <line x1="195" y1="280" x2="405" y2="280" stroke="#d0eaff" stroke-width="0.8" opacity="0.6"/>
+  <line x1="195" y1="286" x2="405" y2="286" stroke="#3d90c8" stroke-width="0.5" opacity="0.5"/>
+  <!-- Top crust texture -->
+  <path d="M200 260 Q250 257 300 260 Q350 257 400 260" fill="none" stroke="#d0eaff" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Spoon with syrup -->
+  <path d="M420 80 Q430 85 435 100 Q440 120 435 140 L425 140 Q420 120 422 100 Q420 88 420 80 Z" fill="#8a7560" stroke="#6a5540" stroke-width="1"/>
+  <!-- Spoon handle going up -->
+  <line x1="420" y1="80" x2="410" y2="30" stroke="#8a7560" stroke-width="3" stroke-linecap="round"/>
+  <!-- Syrup on spoon -->
+  <ellipse cx="430" cy="120" rx="8" ry="12" fill="url(#ds-syrup)" opacity="0.8"/>
+  
+  <!-- Main syrup stream falling from spoon -->
+  <path d="M430 140 Q432 160 430 180 Q432 200 430 220 Q431 240 430 255" fill="none" stroke="url(#ds-drip)" stroke-width="7" stroke-linecap="round"/>
+  <!-- Thinner trail -->
+  <path d="M430 140 Q431 155 430 170" fill="none" stroke="#3d1f0e" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+  <!-- Droplet forming at bottom -->
+  <ellipse cx="430" cy="257" rx="5" ry="7" fill="#3d1f0e"/>
+  
+  <!-- Syrup already on pastry - pooling -->
+  <path d="M250 262 Q270 258 290 262 Q310 258 340 262 Q360 259 380 262" fill="none" stroke="#3d1f0e" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <path d="M270 260 Q300 256 330 260 Q350 257 370 260" fill="none" stroke="#1a2e4a" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <!-- Syrup dripping off edges -->
+  <path d="M220 295 Q222 305 220 312" fill="none" stroke="url(#ds-drip)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M350 295 Q352 308 350 315" fill="none" stroke="url(#ds-drip)" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <ellipse cx="220" cy="314" rx="3" ry="4" fill="#3d1f0e" opacity="0.5"/>
+
+  <!-- Second syrup drizzle trail (already landed) -->
+  <path d="M280 262 Q290 260 300 263 Q310 260 320 263" fill="none" stroke="#2a1508" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  
+  <!-- Date syrup bottle in background -->
+  <rect x="80" y="120" width="60" height="120" rx="8" fill="#2a1508" stroke="#4a3828" stroke-width="1.5"/>
+  <rect x="85" y="125" width="50" height="100" rx="5" fill="#3d1f0e" opacity="0.8"/>
+  <!-- Bottle neck -->
+  <rect x="95" y="100" width="30" height="25" rx="4" fill="#2a1508" stroke="#4a3828" stroke-width="1"/>
+  <rect x="93" y="95" width="34" height="8" rx="3" fill="#4a3828"/>
+  <!-- Label -->
+  <rect x="90" y="145" width="40" height="50" rx="2" fill="#f5f0e0" opacity="0.4"/>
+  <rect x="95" y="155" width="30" height="5" rx="1" fill="#4da8e8" opacity="0.5"/>
+  <rect x="100" y="165" width="20" height="3" rx="1" fill="#4da8e8" opacity="0.3"/>
+  
+  <!-- Scattered sesame seeds on pastry -->
+  <circle cx="250" cy="262" r="1.2" fill="#f5f0e0" opacity="0.5"/>
+  <circle cx="280" cy="260" r="1" fill="#f5f0e0" opacity="0.4"/>
+  <circle cx="310" cy="261" r="1.2" fill="#f5f0e0" opacity="0.5"/>
+  <circle cx="340" cy="259" r="1" fill="#f5f0e0" opacity="0.4"/>
+  <circle cx="365" cy="261" r="1.1" fill="#f5f0e0" opacity="0.45"/>
+  <circle cx="230" cy="261" r="0.8" fill="#f5f0e0" opacity="0.4"/>
+  
+  <!-- Small dates on plate -->
+  <ellipse cx="220" cy="300" rx="10" ry="6" fill="#3d1f0e" transform="rotate(-15 220 300)"/>
+  <ellipse cx="380" cy="298" rx="9" ry="5" fill="#1a2e4a" transform="rotate(10 380 298)"/>
+  
+  <!-- Napkin corner -->
+  <path d="M0 340 Q30 330 60 340 Q40 360 20 380 L0 400 Z" fill="#60b5f0" opacity="0.25"/>
+  <path d="M5 348 Q25 340 45 348" fill="none" stroke="#4da8e8" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Light particles/bokeh -->
+  <circle cx="150" cy="60" r="2" fill="#4da8e8" opacity="0.15"/>
+  <circle cx="500" cy="90" r="1.5" fill="#4da8e8" opacity="0.12"/>
+  <circle cx="530" cy="180" r="1.8" fill="#60b5f0" opacity="0.1"/>
+  <circle cx="70" cy="300" r="1.2" fill="#4da8e8" opacity="0.1"/>
+  
+  <!-- Warm light reflection on syrup stream -->
+  <path d="M431 155 Q432 175 431 195" fill="none" stroke="#4da8e8" stroke-width="1" opacity="0.15"/>
+</svg>

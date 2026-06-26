@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#0a1628"/>
+  <ellipse cx="200" cy="195" rx="120" ry="60" fill="#0f1e36" stroke="#4da8e8" stroke-width="1"/>
+  <!-- Maamoul cookies arranged -->
+  <ellipse cx="165" cy="170" rx="30" ry="18" fill="#60b5f0"/>
+  <ellipse cx="235" cy="170" rx="30" ry="18" fill="#60b5f0"/>
+  <ellipse cx="200" cy="190" rx="30" ry="18" fill="#60b5f0"/>
+  <!-- Decorative mold patterns -->
+  <path d="M150 168 Q157 162 165 165 Q173 162 180 168" stroke="#2d7ab8" stroke-width="1" opacity="0.5"/>
+  <path d="M152 172 Q158 167 165 169 Q172 167 178 172" stroke="#2d7ab8" stroke-width="0.8" opacity="0.4"/>
+  <path d="M220 168 Q227 162 235 165 Q243 162 250 168" stroke="#2d7ab8" stroke-width="1" opacity="0.5"/>
+  <path d="M222 172 Q228 167 235 169 Q242 167 248 172" stroke="#2d7ab8" stroke-width="0.8" opacity="0.4"/>
+  <path d="M185 188 Q192 182 200 185 Q208 182 215 188" stroke="#2d7ab8" stroke-width="1" opacity="0.5"/>
+  <path d="M187 192 Q193 187 200 189 Q207 187 213 192" stroke="#2d7ab8" stroke-width="0.8" opacity="0.4"/>
+  <!-- Powdered sugar dusting -->
+  <circle cx="162" cy="166" r="1" fill="#f5f0e8" opacity="0.5"/>
+  <circle cx="170" cy="168" r="1.5" fill="#f5f0e8" opacity="0.4"/>
+  <circle cx="233" cy="165" r="1" fill="#f5f0e8" opacity="0.5"/>
+  <circle cx="240" cy="170" r="1.5" fill="#f5f0e8" opacity="0.4"/>
+  <circle cx="198" cy="185" r="1" fill="#f5f0e8" opacity="0.5"/>
+  <circle cx="205" cy="188" r="1.5" fill="#f5f0e8" opacity="0.4"/>
+  <!-- Cross section showing date filling -->
+  <ellipse cx="300" cy="180" rx="28" ry="16" fill="#60b5f0"/>
+  <ellipse cx="300" cy="180" rx="15" ry="8" fill="#1a2e4a"/>
+</svg>

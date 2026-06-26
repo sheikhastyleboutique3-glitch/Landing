@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="max-width:100%;height:auto;">
+  <defs>
+    <linearGradient id="kl-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1e36"/>
+      <stop offset="100%" style="stop-color:#0a1628"/>
+    </linearGradient>
+    <linearGradient id="kl-honey" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4da8e8"/>
+      <stop offset="50%" style="stop-color:#60b5f0"/>
+      <stop offset="100%" style="stop-color:#b8651e"/>
+    </linearGradient>
+    <linearGradient id="kl-pastry" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d0eaff"/>
+      <stop offset="50%" style="stop-color:#4da8e8"/>
+      <stop offset="100%" style="stop-color:#3d90c8"/>
+    </linearGradient>
+    <linearGradient id="kl-layer1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e8c96e"/>
+      <stop offset="30%" style="stop-color:#d0eaff"/>
+      <stop offset="70%" style="stop-color:#4da8e8"/>
+      <stop offset="100%" style="stop-color:#3d90c8"/>
+    </linearGradient>
+    <linearGradient id="kl-drip" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4da8e8;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#60b5f0;stop-opacity:0.7"/>
+    </linearGradient>
+    <filter id="kl-glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="kl-spotlight" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#4da8e8;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#0a1628;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#kl-bg)"/>
+  <rect width="600" height="400" fill="url(#kl-spotlight)"/>
+  
+  <!-- Plate/Surface -->
+  <ellipse cx="300" cy="340" rx="220" ry="50" fill="#2d2318" opacity="0.8"/>
+  <ellipse cx="300" cy="335" rx="200" ry="45" fill="#3d3025" stroke="#4da8e8" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Main pastry block - multiple layers -->
+  <!-- Bottom layer -->
+  <path d="M120 280 Q130 275 180 272 L420 272 Q470 275 480 280 L475 290 Q465 295 420 292 L180 292 Q135 295 125 290 Z" fill="#3d90c8"/>
+  <!-- Layer 2 -->
+  <path d="M125 262 Q135 257 185 255 L415 255 Q465 258 475 262 L472 272 Q462 275 415 272 L185 272 Q140 275 130 272 Z" fill="#4da8e8"/>
+  <!-- Flaky texture on layer 2 -->
+  <path d="M150 258 Q200 256 250 259 Q300 256 350 258 Q400 256 450 259" fill="none" stroke="#d0eaff" stroke-width="0.5" opacity="0.6"/>
+  <!-- Layer 3 -->
+  <path d="M130 244 Q140 239 190 237 L410 237 Q460 240 470 244 L467 255 Q457 258 410 255 L190 255 Q145 258 135 255 Z" fill="#e8c96e"/>
+  <!-- Layer 4 - cream filling -->
+  <path d="M135 232 Q145 228 195 226 L405 226 Q455 229 465 232 L462 244 Q452 247 405 244 L195 244 Q150 247 140 244 Z" fill="#f5f0e0"/>
+  <!-- Layer 5 -->
+  <path d="M130 215 Q140 210 190 208 L410 208 Q460 211 470 215 L467 226 Q457 229 410 226 L190 226 Q145 229 135 226 Z" fill="#4da8e8"/>
+  <!-- Layer 6 -->
+  <path d="M125 198 Q135 193 185 191 L415 191 Q465 194 475 198 L472 208 Q462 211 415 208 L185 208 Q140 211 130 208 Z" fill="#e8c96e"/>
+  <!-- Flaky texture -->
+  <path d="M150 195 Q200 193 250 196 Q300 193 350 195 Q400 193 450 196" fill="none" stroke="#d0eaff" stroke-width="0.5" opacity="0.6"/>
+  <!-- Layer 7 - cream -->
+  <path d="M130 183 Q140 179 190 177 L410 177 Q460 180 470 183 L467 191 Q457 194 410 191 L190 191 Q145 194 135 191 Z" fill="#f5f0e0"/>
+  <!-- Top layer -->
+  <path d="M125 165 Q135 158 185 155 L415 155 Q465 158 475 165 L472 177 Q462 180 415 177 L185 177 Q140 180 130 177 Z" fill="url(#kl-layer1)"/>
+  <!-- Top crust texture -->
+  <path d="M140 160 Q200 157 260 161 Q320 157 380 160 Q420 157 460 160" fill="none" stroke="#d0eaff" stroke-width="1" opacity="0.7"/>
+  <path d="M150 165 Q220 162 290 166 Q340 162 400 165 Q440 162 465 165" fill="none" stroke="#3d90c8" stroke-width="0.7" opacity="0.5"/>
+  
+  <!-- Honey drizzle - main stream -->
+  <path d="M280 155 Q282 130 285 110 Q283 90 286 70 Q284 55 285 40" fill="none" stroke="url(#kl-honey)" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  <path d="M280 155 Q275 145 278 135" fill="none" stroke="#4da8e8" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  
+  <!-- Honey drips on pastry -->
+  <path d="M200 160 Q202 150 200 140 Q201 135 200 130" fill="none" stroke="url(#kl-drip)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M350 158 Q352 148 350 138 Q351 130 349 125" fill="none" stroke="url(#kl-drip)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M420 165 Q422 155 420 148" fill="none" stroke="url(#kl-drip)" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Honey pooling on top -->
+  <ellipse cx="300" cy="160" rx="60" ry="4" fill="#4da8e8" opacity="0.5"/>
+  <ellipse cx="250" cy="162" rx="30" ry="3" fill="#60b5f0" opacity="0.4"/>
+  
+  <!-- Honey dripping off the side -->
+  <path d="M480 195 Q485 210 483 230 Q484 250 482 265" fill="none" stroke="url(#kl-honey)" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+  <ellipse cx="482" cy="268" rx="4" ry="6" fill="#60b5f0" opacity="0.7"/>
+  
+  <path d="M125 230 Q120 245 122 260 Q121 275 123 285" fill="none" stroke="url(#kl-honey)" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <ellipse cx="123" cy="288" rx="3" ry="5" fill="#60b5f0" opacity="0.6"/>
+  
+  <!-- Scattered crumbs -->
+  <circle cx="180" cy="310" r="2" fill="#4da8e8" opacity="0.5"/>
+  <circle cx="400" cy="315" r="1.5" fill="#e8c96e" opacity="0.4"/>
+  <circle cx="350" cy="320" r="1" fill="#4da8e8" opacity="0.3"/>
+  <circle cx="230" cy="318" r="1.5" fill="#3d90c8" opacity="0.4"/>
+  
+  <!-- Light reflections -->
+  <ellipse cx="300" cy="160" rx="100" ry="5" fill="#f5f0e0" opacity="0.1"/>
+  <path d="M200 170 Q250 167 300 170" fill="none" stroke="#f5f0e0" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Steam wisps -->
+  <path d="M250 140 Q245 120 250 100 Q245 80 250 60" fill="none" stroke="#f5f0e0" stroke-width="1" opacity="0.15"/>
+  <path d="M320 135 Q325 115 320 95 Q325 75 320 55" fill="none" stroke="#f5f0e0" stroke-width="1" opacity="0.12"/>
+  <path d="M380 140 Q375 118 380 96" fill="none" stroke="#f5f0e0" stroke-width="0.8" opacity="0.1"/>
+</svg>
