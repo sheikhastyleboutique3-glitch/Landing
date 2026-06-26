@@ -7,7 +7,7 @@
     "descriptionAr": "طبقات ذهبية من المعجنات المقرمشة مع القيمر الغني، مزينة بالعسل",
     "price": 35,
     "category": "breakfast",
-    "image": "images/menu/kahi-gaimer.svg",
+    "image": "https://images.unsplash.com/photo-1619221882266-03de6b3a7088?w=600&q=80",
     "featured": true,
     "available": true
   },
@@ -19,7 +19,7 @@
     "descriptionAr": "كاهي تقليدي مع دبس التمر العراقي الفاخر والزبدة",
     "price": 30,
     "category": "breakfast",
-    "image": "images/menu/kahi-date.svg",
+    "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&q=80",
     "featured": false,
     "available": true
   },
@@ -31,7 +31,7 @@
     "descriptionAr": "كاهي، قيمر، عسل، جبن، بيض، خبز، وشاي عراقي",
     "price": 65,
     "category": "breakfast",
-    "image": "images/menu/breakfast-platter.svg",
+    "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=600&q=80",
     "featured": true,
     "available": true
   },
@@ -43,7 +43,7 @@
     "descriptionAr": "حصة سخية من القيمر الطازج مع العسل والخبز الساخن",
     "price": 28,
     "category": "breakfast",
-    "image": "images/menu/gaimer-bowl.svg",
+    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80",
     "featured": false,
     "available": true
   },
@@ -55,7 +55,7 @@
     "descriptionAr": "بقلاوة متنوعة مصنوعة يدوياً بالفستق والجوز",
     "price": 45,
     "category": "pastries",
-    "image": "images/menu/baklava.svg",
+    "image": "https://images.unsplash.com/photo-1519676867240-f03562e64548?w=600&q=80",
     "featured": true,
     "available": true
   },
@@ -67,7 +67,7 @@
     "descriptionAr": "كنافة مقرمشة بالجبن الذائب وشراب الورد",
     "price": 40,
     "category": "pastries",
-    "image": "images/menu/kunafa.svg",
+    "image": "https://images.unsplash.com/photo-1579888944880-d98341245702?w=600&q=80",
     "featured": false,
     "available": true
   },
@@ -79,7 +79,7 @@
     "descriptionAr": "أصابع فيلو محشوة بالقشطة، مقلية ومغموسة بالقطر",
     "price": 35,
     "category": "pastries",
-    "image": "images/menu/znoud.svg",
+    "image": "https://images.unsplash.com/photo-1587314168485-3236d6710814?w=600&q=80",
     "featured": false,
     "available": true
   },
@@ -91,7 +91,7 @@
     "descriptionAr": "كعك السميد المحشو بالتمر ومنكه بالهيل",
     "price": 25,
     "category": "pastries",
-    "image": "images/menu/maamoul.svg",
+    "image": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=600&q=80",
     "featured": false,
     "available": true
   },
@@ -103,7 +103,7 @@
     "descriptionAr": "شاي أسود تقليدي قوي بالهيل، يقدم في كأس استكان",
     "price": 12,
     "category": "drinks",
-    "image": "images/menu/chai.svg",
+    "image": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&q=80",
     "featured": false,
     "available": true
   },
@@ -115,7 +115,7 @@
     "descriptionAr": "قهوة عربية طازجة بالزعفران والهيل",
     "price": 15,
     "category": "drinks",
-    "image": "images/menu/coffee.svg",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefda?w=600&q=80",
     "featured": false,
     "available": true
   },
@@ -127,7 +127,7 @@
     "descriptionAr": "عصائر طازجة موسمية — مانجو، رمان، أو برتقال",
     "price": 18,
     "category": "drinks",
-    "image": "images/menu/juice.svg",
+    "image": "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=600&q=80",
     "featured": false,
     "available": true
   },
@@ -139,7 +139,7 @@
     "descriptionAr": "طبق فاخر لشخصين — كاهي، قيمر، بقلاوة، فواكه طازجة، وشاي",
     "price": 120,
     "category": "specials",
-    "image": "images/menu/royal-feast.svg",
+    "image": "https://images.unsplash.com/photo-1547573854-74d2a71d0826?w=600&q=80",
     "featured": true,
     "available": true
   },
@@ -151,7 +151,7 @@
     "descriptionAr": "صندوق للمنزل يحتوي على تشكيلة كاهي وقيمر وقطر وأطباق جانبية لـ4-6 أشخاص",
     "price": 95,
     "category": "specials",
-    "image": "images/menu/family-box.svg",
+    "image": "https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=600&q=80",
     "featured": false,
     "available": true
   },
@@ -163,7 +163,7 @@
     "descriptionAr": "ضيافة كبيرة للمناسبات — قائمة قابلة للتخصيص لأكثر من 10 ضيوف",
     "price": 500,
     "category": "specials",
-    "image": "images/menu/catering.svg",
+    "image": "https://images.unsplash.com/photo-1555244162-803834f70033?w=600&q=80",
     "featured": false,
     "available": true
   }

@@ -2392,3 +2392,15 @@ picture img {
   .footer-top { grid-template-columns: 1fr; }
   .footer-links { grid-template-columns: repeat(2, 1fr); }
 }
+
+
+
+/* Hero Background Image */
+.hero-bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
