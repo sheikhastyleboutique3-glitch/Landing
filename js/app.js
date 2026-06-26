@@ -86,14 +86,14 @@
         <div class="menu-card" data-id="${item.id}">
           <div class="menu-card-visual">
             <img src="${IMG_PREFIX}${item.image}" alt="${item.nameAr || item.name}" class="responsive-img" loading="lazy">
-            ${item.featured ? '<span class="menu-card-badge">مميز</span>' : ''}
+            ${item.featured ? `<span class="menu-card-badge">${isArabic ? 'مميز' : 'Popular'}</span>` : ''}
           </div>
           <div class="menu-card-info">
-            <h3 class="menu-card-title">${item.nameAr || item.name}</h3>
-            <p class="menu-card-desc">${item.descriptionAr || item.description}</p>
+            <h3 class="menu-card-title">${isArabic ? (item.nameAr || item.name) : item.name}</h3>
+            <p class="menu-card-desc">${isArabic ? (item.descriptionAr || item.description) : item.description}</p>
             <div class="menu-card-footer">
-              <span class="menu-price">${item.price} ر.ق</span>
-              <button class="menu-add-btn" title="أضف للطلب">+</button>
+              <span class="menu-price">${item.price} ${isArabic ? 'ر.ق' : 'QAR'}</span>
+              <button class="menu-add-btn" title="${isArabic ? 'أضف للطلب' : 'Add to order'}">+</button>
             </div>
           </div>
         </div>
@@ -120,8 +120,8 @@
       if (!grid) return;
       grid.innerHTML = items.map((item, i) => `
         <div class="gallery-item ${i===0||i===4 ? 'large' : ''}">
-          <img src="${IMG_PREFIX}${item.image}" alt="${item.titleAr || item.title}" class="responsive-img" loading="lazy">
-          <span class="gallery-label">${item.titleAr || item.title}</span>
+          <img src="${IMG_PREFIX}${item.image}" alt="${isArabic ? (item.titleAr || item.title) : item.title}" class="responsive-img" loading="lazy">
+          <span class="gallery-label">${isArabic ? (item.titleAr || item.title) : item.title}</span>
         </div>
       `).join('');
     } catch(err) { console.error('Gallery load error:', err); }
@@ -137,10 +137,10 @@
       slider.innerHTML = items.map(t => `
         <div class="testimonial-card">
           <div class="testimonial-rating">${'<span class="star">★</span>'.repeat(t.rating)}</div>
-          <p class="testimonial-text">"${t.textAr || t.text}"</p>
+          <p class="testimonial-text">"${isArabic ? (t.textAr || t.text) : t.text}"</p>
           <div class="testimonial-author">
-            <div class="testimonial-avatar" style="background:linear-gradient(135deg,var(--color-gold),var(--color-amber));width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.1rem;">${(t.nameAr || t.name).charAt(0)}</div>
-            <div><div class="testimonial-name">${t.nameAr || t.name}</div><div class="testimonial-role">${t.date}</div></div>
+            <div class="testimonial-avatar" style="background:linear-gradient(135deg,var(--color-gold),var(--color-amber));width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.1rem;">${(isArabic ? (t.nameAr || t.name) : t.name).charAt(0)}</div>
+            <div><div class="testimonial-name">${isArabic ? (t.nameAr || t.name) : t.name}</div><div class="testimonial-role">${t.date}</div></div>
           </div>
         </div>
       `).join('');
@@ -181,15 +181,19 @@
 
   // ========== LANGUAGE TOGGLE ==========
   const langBtn = document.getElementById('lang-toggle');
-  let isArabic = false;
+  let isArabic = true; // Site starts in Arabic
   if (langBtn) {
     langBtn.addEventListener('click', () => {
       isArabic = !isArabic;
       document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
       document.documentElement.lang = isArabic ? 'ar' : 'en';
-      langBtn.querySelector('.lang-en').style.display = isArabic ? 'none' : 'inline';
-      langBtn.querySelector('.lang-ar').style.display = isArabic ? 'inline' : 'none';
-      // Would load Arabic translations here in production
+      langBtn.querySelector('.lang-en').style.display = isArabic ? 'inline' : 'none';
+      langBtn.querySelector('.lang-ar').style.display = isArabic ? 'none' : 'inline';
+      // Reload menu/gallery/testimonials in correct language
+      const activeTab = document.querySelector('.menu-tab.active');
+      if (activeTab) loadMenu(activeTab.dataset.category);
+      loadGallery();
+      loadTestimonials();
     });
   }
 
